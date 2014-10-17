@@ -86,7 +86,7 @@ a:active {
 
 #onglets {
     position: absolute;
-    font-family: NeoRetro;
+    font-family: Helvetica;
     color: #f8ef62;
     /* text-shadow: #ffffbe 0 0 1px; */
     /* box-shadow: 0 0 5px #363636; */
@@ -132,12 +132,12 @@ a:active {
 
 #projet {
     /* top: 84px; */
-    left: -507px;
+    left: -457px;
 }
 
 #fanfare {
     /* top: 0; */
-    left: -333px;
+    left: -340px;
 }
 
 #reseau {
@@ -147,23 +147,21 @@ a:active {
 
 #soutien {
     /* top: 126; */
-    left: -171px;
+    left: 105px;
 }
 
 #partenaires {
     /* top: 81; */
-    left: 331px;
-}
-
-#contact {
-    /* top: 171; */
-    left: 514;
+    left: -235px;
 }
 
 #actualites {
-    top: 218;
-    left: 345;
-    z-index: 4;
+    /* top: 171; */
+    left: 246px;
+}
+
+#photos {
+    left: 387px;
 }
 
 #accueil {
