@@ -1,0 +1,471 @@
+@font-face {
+	font-family: NeoRetro;
+	src: url('NeoRetroFill.eot') format('embedded-opentype'),
+        url('NeoRetroFill.ttf') format('truetype');
+}
+
+html, body
+{
+  width: 100%;
+  margin: 0px;  height: 100%;
+  min-height: 100%;
+}
+body {
+	background-color: #e7e7e7;
+	background-image: url('http://brasspackers.org/mooning.jpg');
+	margin: 0;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+#main{
+	margin: 0 auto 0;
+	background-image: url('graphismes/fond.jpg');
+	min-height:100% !important;
+	width:100%;
+	box-shadow: 0 0 36px #363636;	position: relative;
+	border-radius: 0 0 10 10;
+}#fond-discret{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('graphismes/fond-discret.png');
+    background-size: 50%;
+}
+#page{
+	display: none;
+}
+#session {
+    display: none;
+}
+#random{
+    position: absolute;
+    margin-left: -450px;
+    width: 900px;
+    left: 50%;
+    top: -100px;
+    box-shadow: grey 0 0 17px;
+    max-width: 100%;
+}
+
+#onglets{	position: relative;
+	background-repeat: no-repeat;  
+	font-family: NeoRetro;
+	color: #f8ef62;
+	text-shadow: #ffffbe 0 0 1px;
+    max-width: 100%;    box-shadow: 0 0 15px #363636;
+}
+div#onglets.accueil {
+    margin: 0 auto 0;
+    background-image: url("graphismes/titre.jpg");    background-size: 100% auto;
+    width: 850;
+	height: 251;
+	font-size: 22;
+    background-color: black;
+}
+div#onglets.autres {
+    margin: 0 auto 0;
+    background-image: url("graphismes/titre.jpg");    background-size: 100% auto;
+    width: 850;
+	height: 257;
+	font-size: 22;
+    background-color: black;
+}
+#onglets a{
+	text-decoration:none;
+	color: #f8ef62;
+}
+.onglet{
+	position: absolute;
+}
+#projet {
+	top: 84px;
+	left: 202;
+}
+#fanfare {
+	top: 130;
+	left: 170;
+}
+#reseau {
+	top: 176;
+	left: 183;
+}
+#soutien {
+	top: 126;
+	left: 523;
+}
+#partenaires {
+	top: 81;
+	left: 505;
+}
+#contact {	top: 171;
+	left: 514;
+}#actualites {
+	top: 218;
+	left: 345;
+    z-index: 4;
+}
+
+#accueil{
+	position: absolute;
+}
+#accueil {    width:520px;
+	height: 55px;
+	top:12;
+	left:130;
+}
+
+
+#google_translate_element {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 109;
+}
+
+
+/*
+#projet.autres {
+	left: 26;
+}
+#fanfare.autres {
+	left: 170;
+}
+#accueil.autres {
+	width:441;
+	height: 110;
+	top:70;
+	left:207;
+}
+#reseau.autres {
+	left: 309;
+}
+#soutien.autres {
+	left: 588;
+}
+#partenaires.autres {
+	left: 443;
+}
+#contact.autres {
+	left: 777;
+}#actualites.autres {
+	top: 208;
+	left: 514;
+}*/
+#logos{
+	position: absolute;
+}
+#logos {
+	top:209;
+	left:177;
+}/*
+#logos.autres {
+	top:183;	left:363;
+}
+    */
+#logos a{
+	margin: 0 10;
+}
+#logos img{
+	height:38;
+    opacity: 0.8;
+}#bas{
+    width: 850;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 0 15px #363636;
+}.colonne{
+    position: absolute;
+    height: 500px;
+}#gauche{
+    width: 42%;
+}.speech{
+    overflow: auto;
+    box-shadow: 0 0 43px rgba(0, 0, 0, 0.6) inset;
+    color: rgb(235, 235, 235);
+    font-size: 15px; !important
+}#bigNigga{
+    height: 50%;
+    background: url("graphismes/zgueg.jpg") no-repeat;
+    background-color: #222222;
+    background-size: 100% auto;
+}#bigNigga p{
+    margin: 1em 8em 1em 1em;
+}#littleNigga{
+    height: 50%;
+    background: url("graphismes/kids.jpg") no-repeat;
+    background-color: #3C3C3C;
+    background-size: 100% auto;
+}#littleNigga p{
+    margin: 1em 1em 1em 10em;
+}#droite{
+    width: 58%;
+    background: url("graphismes/mooning.jpg");
+    right: 0;
+    overflow: auto;
+    //box-shadow: 0 0 43px rgba(0, 0, 0, 0.6) inset;
+}
+#droite p{
+    padding: 1em;
+    font-size: 11pt;
+}
+
+#content{
+	width: 1010px;
+	min-height: 576px;
+	position: relative;
+	margin: 0 auto 30px;
+    max-width: 100%;
+}
+#content.autres {
+    top: -31px;
+}
+
+#content2{
+	padding: 3em;
+	position: relative;
+    max-width: 100%;
+}
+
+
+.fond{
+	position: absolute;
+	width: 100%;
+}
+
+#f_tete{
+	background: url('graphismes/page2.png') no-repeat;
+	height: 288;
+}
+
+#f_corps{
+	background: url('graphismes/fond1px.png') repeat-y;
+	display: block;
+    position:absolute;
+    height:auto;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin-top:288px;
+    margin-bottom:288px;
+    margin-right:0px;
+    margin-left:0px;
+}
+
+#f_pied{
+	background: url('graphismes/pied.png') no-repeat;
+	height: 288;
+	bottom: 0;
+}
+
+#firefox {
+    position: absolute;
+    opacity: 0;
+}
+
+#bloc_bienvenue{
+	
+}
+
+section .article{
+	margin: 1em 0em;
+}
+.article_container button{
+	display: none;
+}
+
+table {
+    max-width: 100%;
+}
+
+h1{
+	font-family: NeoRetro;
+	font-size: x-large;
+    color: brown;
+}
+.article h1{
+    //margin-left: 3em;
+}
+h2{
+	font-family: NeoRetro;
+	font-size: 16;
+    color: firebrick;
+}
+.article h2{
+    //margin-left: 1em;
+}
+p{
+	font-family: Verdana;
+}section p{
+    font-size: small;
+	margin: 1em 0.5em;
+	text-align: justify;
+}
+#content img{
+	//margin: 1em 0.5em;
+    border-radius: 2px;
+}
+#content a{
+    color: blue;
+}
+#content table{
+    margin: auto;
+}
+
+#editer-ex{
+    position: absolute;
+    margin-left: -22;
+    left: 50%;
+    display: none;
+}
+#editer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 1em;
+    height: 1em;
+}
+
+
+.card-container {
+  	width: 225px;
+	height: 359px;
+    perspective: 1000;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  position: relative;
+  display: inline-block;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 1s ease-in-out;
+    -moz-transform-style: preserve-3d;
+  -moz-transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+    transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+.card .side {
+    backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-image: url('graphismes/mooning.jpg');
+    box-shadow: 0 0 60px  #dddddd inset;
+    z-index: 2;
+}
+.card .back {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+    overflow: auto;
+    z-index: 1;
+}
+.card img {
+	width:100%;
+}
+.card p {
+	font-size: 9pt;
+}
+.card p, h1, h2 {
+	margin: 1em;
+}
+.card h1 {
+    font-size: 15pt;
+    color: brown;
+    position: relative;
+    left: -5px;
+}
+.card h2 {
+    color: rgb(95, 95, 95) ;
+}
+
+#avion {
+    position: fixed;
+    top: -100px;
+    z-index: 3;
+    
+}
+#temoin {
+    position: fixed;
+    top: 0;
+    left:  50%;
+}
+#avion img {
+    position: relative;
+    top: -24px;
+    left: -22px;
+    width: 48px;
+}
+
+.pixel{
+    width: 2%;
+    height: 5%;
+    background-color: rgba(201, 96, 96, 0.81);
+    display: inline-block;
+}
+#matrix{
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main_column{
+    margin: auto;
+    height: 100%;
+    width: 900;
+    position: relative;
+    top: -25px;
+}
+.bandeau{
+    width: 70%;
+    overflow: auto;
+    height: 204px;
+}
+.bandeau p {
+    font-family: NeoRetro;
+	color: #f8ef62;
+	text-shadow: #ffffbe 0 0 1px;
+    font-size: 16px;
+    padding-right: 4em;
+}
+#titre{
+    height: 300;
+    width: 100%;
+    background-image: url("graphismes/titre.jpg");
+    background-size: 100%;
+}
+#zgueg{
+    
+    background-image: url("graphismes/zgueg.jpg");
+    background-size: 100%;
+}
+#kids{
+ 
+    background-image: url("graphismes/kids.jpg");
+    background-size: 100%;
+}
+
+
