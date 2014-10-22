@@ -1,0 +1,893 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The BrassPackers, Fanfare Solidaire</title>
+  <link href="graphismes/ico3.png" rel="icon" type="image/png">
+  <link href="style.css" rel="stylesheet">
+  <script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>
+  <link href="redactor.css" rel="stylesheet">
+  <script src="js/redactor.min.js" type="text/javascript"></script>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <script>
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-48430682-1', 'brasspackers.org');
+
+        ga('send', 'pageview');
+
+  </script>
+</head>
+
+<body class="clearfix">
+  <div class="clearfix" id="main">
+      <div id="onglets">
+          <div id="onglets_in">
+              <div id="onglets_middle">
+                  <a class="onglet" href="#projet" id="projet">Projet Solidaire</a>
+                  <a class="onglet" href="#partenaires" id="partenaires">ONG Partenaires</a>
+                  <a class="onglet" href="#soutien" id="soutien">Nous Soutenir</a>
+                  <a class="onglet img" href="#fanfare" id="fanfare">Prestations</a>
+                  <a class="onglet" href="#actualites" id="actualites">Actualités</a>
+                  <a class="img" href="#accueil" id="accueil"></a>
+              </div>
+          </div>
+
+          <div id='logos'>
+              <a class="fsf img" href="http://fanfaresansfrontieres.org/" target="new"></a>
+              <a class="soundcloud img" href="https://soundcloud.com/brasspackers" target="new"></a>
+              <a class="fb img" href="https://www.facebook.com/TheBrasspackers" target="new"></a>
+              <a class="gmail img" href="mailto:brasspackers@gmail.com" target="new"></a>
+          </div>
+      </div>
+
+      <section class="clearfix" id="content">
+          <div class="fond" id="f_tete"></div>
+
+          <div class="fond" id="f_corps"></div>
+
+          <div class="fond" id='f_pied'></div>
+
+          <div id="content2"></div>
+      </section>
+  </div>
+
+  <div id="editer"></div>
+  <script id="projet_template" type="text/template">
+          <div class='article_container'>
+
+            <div class='article' data-page="projet" id="2" onclick='redact(this);'>
+
+              
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        
+          <div class='article_container'>
+
+            <div class='article' data-page="projet" id="3" onclick='redact(this);'>
+
+              <table>
+<tbody>
+<tr>
+	<td style="width: 55%;">
+	</td>
+	<td style="width:5%;">
+	</td>
+	<td style="text-align: right;">
+		<a href="http://brasspackers.org/?page=projet"><img src="/images/fr.png" alt="" style="width: 30px; font-family: Verdana; font-size: small; text-align: justify;"></a> &nbsp; <a href="http://brasspackers.org/?page=projet_en"><img src="/images/en.png" alt="" style="width: 30px; font-family: Verdana; font-size: small; text-align: justify;"></a> &nbsp; <a href="http://brasspackers.org/?page=projet_es"><img src="/images/es.png" alt="" style="width: 30px; font-family: Verdana; font-size: small; text-align: justify;"></a>
+	</td>
+</tr>
+<tr>
+	<td style="width: 55%;">
+		<h1>Le Projet Brasspackers</h1>
+		<p>
+			Brasspackers est un groupe composé de 11 étudiants de l’Ecole Centrale Paris, tous musiciens. Inspirés par des projets de fanfares comme Babel Brass Band et leur dimension de partage et de solidarité, nous avons adhéré au réseau 
+			<a href="http://www.fanfaresansfrontieres.org/" style="font-family: Verdana; font-size: small; text-align: justify;">Fanfare Sans Frontières</a> et avons créé l’association loi 1901 Brasspackers pour venir en aide grâce à la musique à des enfants et des jeunes qui n’auraient pas facilement accès à l’éducation.
+		</p>
+	</td>
+	<td style="width: 5%;">
+	</td>
+	<td>
+		<h2><a href="#lien_projet">Pourquoi un tel projet</a></h2>
+		<h2><a href="#lien_action">Notre action sur place</a></h2>
+		<h2><a href="#lien_musique">Ce qu’apporte la musique</a></h2>
+		<h2><a href="#lien_groupe">Le groupe</a></h2>
+		<h2><a href="#lien_reussite">La réussite de notre action</a></h2>
+	</td>
+</tr>
+</tbody>
+</table>
+<h2 style="margin-left: 60px;"></h2>
+<h2 style="margin-left: 60px;"><a href="#lien_reussite"></a></h2>
+<h2 id="lien_projet" style="text-align: center;"></h2>
+<h2 id="lien_projet" style="text-align: justify;">Pourquoi un tel projet ?
+</h2>
+<p style="text-align: justify;">
+	La musique est vitale pour chacun d’entre nous. Nous avons tous la même envie : partager cette passion, et la transmettre ! Nous nous sommes alors tournés vers les enfants du monde, ceux qui sont laissés pour compte et qui n’ont pas facilement accès à la culture ou à l’éducation. Il nous parait essentiel que la musique contribue à leur épanouissement comme elle a contribué au notre.
+</p>
+<p style="text-align: justify;">
+	Nous pensons que l’éveil musical pourra beaucoup apporter à ces jeunes défavorisés et leur permettra de sortir de leur quotidien.
+</p>
+<p style="text-align: justify;">
+	L’ouverture culturelle et musicale que nous voulons leur offrir leur redonnera confiance en eux, éveillera leur créativité et les fera vivre et échanger au sein d’un groupe.
+</p>
+<p style="text-align: justify;">
+</p>
+<h2 style="text-align: center;"><img src="/images/fsf/2011-03-21.jpg" alt="" style="width: 600px;"></h2>
+<h2 id="lien_action" style="text-align: justify;">Quelle sera notre action sur place ?</h2>
+<p>
+	Notre action se déroulera de Janvier
+à Juillet 2015, période pendant laquelle nous voulons intervenir dans 3 pays
+différents. La durée de notre action dans chaque pays sera de deux mois en
+moyenne. Nous consacrerons ce temps à l’épanouissement de chaque enfant à
+travers différentes actions centrées sur la musique.
+</p>
+<p>
+	Pour cela, nous nous mettons à disposition d’une association œuvrant pour
+le développement et l’éducation des enfants. Nous travaillons en collaboration
+avec ces associations en amont de venue, et ceci continuera bien sur une fois
+sur place. Ces associations ont une grande expérience et connaissent très bien
+leurs enfants et le contexte social dans lequel ils évoluent. Ceci nous
+permettra de bâtir notre projet de la manière la plus pertinente possible.
+</p>
+<p style="text-align: justify;">
+	Nous désirons d’abord rencontrer les enfants, gagner leur confiance et susciter leur intérêt. Nous nous présenterons à eux au travers d’un concert et le premier contact se fera grâce à des activités ludiques. Celles-ci évolueront vers des ateliers d’éveil musical axés sur le développement personnel des enfants.
+</p>
+<p style="text-align: justify;">
+	Les ateliers effectuées pendant ces deux mois permettront notamment aux enfants de se familiariser avec les notions de son, de rythme, d’écoute des autres et de soi. Ces ateliers iront du chant à la fabrication d’instruments avec des matériaux de récupération en passant par le corpo-rythme et par l’initiation à divers instruments. Ainsi les enfants pourront appréhender différents aspects de l’apprentissage et de la pratique de la musique. Ces ateliers aboutiront également à la mise en place d’un projet de groupe comme un spectacle ou un concert.
+</p>
+<p style="text-align: justify;">
+	En tant que fanfare, nous pourrions également aider les associations dans lesquelles nous nous rendrons en réalisant diverses prestations musicales. Cet atout peut notamment permettre de leur donner plus de visibilité et de lever des fonds.
+</p>
+<h2 style="text-align: center;"><img src="/images/fsf/2011-05-30.jpg" alt="" style="width: 600px;"></h2>
+<h2 id="lien_musique" style="text-align: justify;">Qu’apporte la musique ?</h2>
+<p style="text-align: justify;">
+	- C’est un langage universel ! Elle permet de tisser facilement des liens et favorise l’échange,  l’ouverture et le partage.
+</p>
+<p style="text-align: justify;">
+	- Faire de la musique permet à l’enfant de se projeter vers le monde extérieur tout en affirmant son identité. Elle permet de développer l’écoute des autres, la conscience du groupe et le respect du travail des autres. Nous voulons ainsi développer la sociabilité des enfants.
+</p>
+<p style="text-align: justify;">
+	- La musique stimule l’expression de soi, tout en développant la créativité et l’imagination. Elle permet à l’enfant de se valoriser au sein d’un groupe et à ses propres yeux, et ainsi de gagner confiance en lui.
+	<br>
+	- La pratique de la musique favorise la concentration, l’attention et la persévérance. C’est donc un réel outil éducatif qui permet de surmonter les difficultés de l’apprentissage classique.
+</p>
+<h2 style="text-align: center;"><img src="/images/fsf/1476494_475852889200613_1753452880_n.jpg" alt="" style="font-family: Verdana; font-size: small; text-align: justify; width: 600px;"></h2>
+<h2 id="lien_groupe" style="text-align: justify;">
+Le groupe</h2>
+<p style="text-align: justify;">
+	Nous sommes tous en deuxième année à l’École Centrale Paris, ce qui équivaut à un niveau BAC+4. Notre école est considérée comme l’une des plus prestigieuses écoles d’ingénieurs de France. La préparation de notre projet s’inscrit parfaitement dans notre formation et l’école nous suit et nous supporte dans sa réalisation.
+</p>
+<p style="text-align: justify;">
+	Ne l’oublions pas, nous sommes avant tout un groupe d’amis qui aiment faire de la musique ensemble. Le résultat aujourd'hui est une fanfare pleine d'énergie au répertoire musical original, facile d'accès et festif !
+</p>
+<p style="text-align: justify;">
+	Nous avons parmi nous un camarade membre de la télévision étudiante de l’école qui réalisera un film et une exposition photo à l’issue de notre projet. Ce travail permettra de donner de la visibilité en France aux ONG locales, de faire connaître notre projet, nos réussites et nos difficultés mais aussi de donner goût à d’autres de se lancer dans un projet humanitaire ou solidaire !
+</p>
+<h2 style="text-align: center;"><img src="/images/fsf/2011-04-15.jpg" alt="" style="width: 600px;"></h2>
+<h2 id="lien_reussite" style="text-align: justify;">Comment assurer la réussite de notre action ?</h2>
+<p style="text-align: justify;">
+	Nous voulons pouvoir aider au mieux  les enfants compte tenu de nos capacités et de leurs besoins.
+</p>
+<p style="text-align: justify;">
+	De notre côté, nous suivons différentes formations qui nous apportent les connaissances pédagogiques et les outils dont nous avons besoin pour construire et animer les activités que nous ferons avec les enfants.
+</p>
+<p style="text-align: justify;">
+	Enfin nous souhaitons travailler main dans la main avec les différents ONG dans lesquelles nous interviendrons afin de construire ce projet ensemble. Ceci nous permettra d’adapter ce que nous ferons à la diversité des situations que nous rencontrerons.&nbsp;
+</p>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        </script><script id="projet_en_template" type="text/template">
+          <div class='article_container'>
+
+            <div class='article' data-page="projet_en" id="0" onclick='redact(this);'>
+
+              <table>
+<tbody>
+<tr>
+	<td style="width: 55%;">
+	</td>
+	<td style="width:5%;">
+	</td>
+	<td style="text-align: right;">
+		<a href="http://brasspackers.org/?page=projet"><img src="/images/fr.png" alt="" style="width: 30px; font-family: Verdana; font-size: small; text-align: justify;"></a> &nbsp; <a href="http://brasspackers.org/?page=projet_en"><img src="/images/en.png" alt="" style="width: 30px; font-family: Verdana; font-size: small; text-align: justify;"></a> &nbsp; <a href="http://brasspackers.org/?page=projet_es"><img src="/images/es.png" alt="" style="width: 30px; font-family: Verdana; font-size: small; text-align: justify;"></a>
+	</td>
+</tr>
+<tr>
+	<td style="width: 55%;">
+		<h1>THE Brasspackers PROJECT&nbsp;</h1>
+		<p>
+			Brasspackers is a band of 11 student musicians from the engineering school “Ecole Centrale Paris”. Inspired by projects such as Babel Brass Band and their will to share and help, we joined the&nbsp;
+			<a href="http://www.fanfaresansfrontieres.org" target="_blank">Fanfare sans Frontières</a> (Brass Band without Borders) network, and officially created the Brasspackers NGO to help, through music, children and teenagers who cannot easily have access to education.<br>
+		</p>
+		<h1></h1>
+	</td>
+	<td style="width:5%;">
+	</td>
+	<td>
+		<h2><a href="#lien_projet">WHY SUCH A project</a></h2>
+		<h2><a href="#lien_action">OUR ACTION THERE</a></h2>
+		<h2><a href="#lien_musique">WHAT MUSIC BRINGs</a></h2>
+		<h2><a href="#lien_groupe">THe group</a></h2>
+		<h2><a href="#lien_reussite">THE SUCCESS OF OUR PROJECT</a></h2>
+	</td>
+</tr>
+</tbody>
+</table><h2 style="margin-left: 60px;"></h2><h2 style="margin-left: 60px;"><a href="#lien_reussite"></a></h2><h2 id="lien_projet" style="text-align: center;"></h2><h2 id="lien_projet" style="text-align: justify;">WHY SUCH A projet ?
+</h2><p>
+	Music is essential to every one of us. We all have the same aim: to share this passion. Therefore, we want to reach out to the children of the world, especially those who cannot easily access culture and education. It seems essential to us that music contributes to their development, as it did to ours.</p><p>
+	We think musical awakening will bring a lot to these underprivileged children and allow them to escape their daily life.</p><p>
+	  Musical and cultural openness that we want to offer will give them self-confidence, awaken their creativity and help them live and share inside a group.</p><p style="text-align: justify;"></p><p style="text-align: justify;"></p><h2 style="text-align: center;"><img src="/images/fsf/2011-03-21.jpg" alt="" style="width: 600px;"></h2><h2 id="lien_action" style="text-align: justify;">What will be our action there?</h2><p>
+	Our action will extend from January to July 2015 and will take place in 3 different countries, with 2 months for each of them. We will dedicate this time to helping the development of every child through a variety of actions bordering on music.</p><p>
+	We want to meet the children first, to gain their trust and their interest. We will introduce ourselves by means of a concert, and the first encounter will be made through recreational activities, which will later turn into musical initiation aiming to improve the children’s personal development.</p><p>
+	 The activities carried out during these two months will, amongst other things, allow the children to become familiar with the concepts of sound, rhythm and listening to ourselves and others. These activities will range from singing to the crafting of instruments with recycled materials, corporal rhythm and introduction to various instruments. This way, the children will be able to grasp different aspects of learning and playing music. Activities will also include the organisation of a group project such as a show or a concert.</p><p>
+	As a brass band, we can also help the organisations we work with by performing various musical performances. This asset could help them to gain visibility or raise money.</p><p style="text-align: justify;"></p><h2 style="text-align: center;"><img src="/images/fsf/2011-05-30.jpg" alt="" style="width: 600px;"></h2><h2 id="lien_musique" style="text-align: justify;">What does music bring?</h2><p>
+	-It is a universal language! It is an easy way to share, bond and become more open.</p><p>
+	-Playing music enables children to communicate with the outside world while asserting their identity. It develops their ability to listen to others, their group conscience and the respect of other people’s work. Thereby we want to promote the children’s sociability.</p><p>
+	-Music stimulates self-expression, while developing creativity and imagination. It allows a child to assert themself inside a group in their own eyes, and therefore to gain self-confidence.</p><p>
+	-The practice of music develops concentration, attention and perseverance. It is indeed a real tool for education, which can overcome many of the difficulties encountered in more standard learning.</p><p style="text-align: justify;"></p><h2 style="text-align: center;"><img src="/images/fsf/1476494_475852889200613_1753452880_n.jpg" alt="" style="font-family: Verdana; font-size: small; text-align: justify; width: 600px;"></h2><h2 id="lien_groupe" style="text-align: justify;">THe group</h2><p>
+	We are all in second year in Ecole Centrale Paris, which represents 4 years of studying after high school. Our school is one of the most prestigious engineering schools in France. The management of such a project fits perfectly into our academic program, therefore the school follows and supports us in its realization.</p><p>
+	Let’s not forget that we are first and foremost a group of friends who enjoy playing music together. The result of this is a brass band full of energy, playing an original, accessible and festive repertoire.</p><p>
+	We have among us a member of the school’s television organization, who will produce a movie and a photographic exhibition upon our return. This will give visibility in France for local NGOs, reveal our project, achievements and difficulties, and also motivate others to create or join a similar solidarity project.</p><p style="text-align: justify;"></p><h2 style="text-align: center;"><img src="/images/fsf/2011-04-15.jpg" alt="" style="width: 600px;"></h2><h2 id="lien_reussite" style="text-align: justify;">How to ensure the success
+of our project?
+</h2><p>
+	We want to help children for the best, by taking into account our capabilities and their needs.</p><p>
+	We will follow, on our side, various trainings regarding education that will bring us the tools we need to create and conduct the activities.</p><p>
+	Finally, we wish to collaborate with the different NGOs we will visit to build this project together. This will allow us to adjust what we do to the variety of situations we may encounter.</p><p style="text-align: justify;"></p>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        </script><script id="projet_es_template" type="text/template">
+          <div class='article_container'>
+
+            <div class='article' data-page="projet_es" id="0" onclick='redact(this);'>
+
+              <table>
+<tbody>
+<tr>
+	<td style="width: 55%;">
+	</td>
+	<td style="width:5%;">
+	</td>
+	<td style="text-align: right;">
+		<a href="http://brasspackers.org/?page=projet"><img src="/images/fr.png" alt="" style="width: 30px; font-family: Verdana; font-size: small; text-align: justify;"></a> &nbsp; <a href="http://brasspackers.org/?page=projet_en"><img src="/images/en.png" alt="" style="width: 30px; font-family: Verdana; font-size: small; text-align: justify;"></a> &nbsp; <a href="http://brasspackers.org/?page=projet_es"><img src="/images/es.png" alt="" style="width: 30px; font-family: Verdana; font-size: small; text-align: justify;"></a>
+	</td>
+</tr>
+<tr>
+	<td style="width: 55%;">
+		<h1>EL Proyecto Brasspackers</h1>
+		<p>
+			Brasspackers es un grupo de 11 estudiantes de la Ecole Centrale de París, todos músicos. Inspirados por proyectos de bandas como el Babel Brass Band, gracias a su sentido del compartir y de la solidaridad, nos unimos a la red de&nbsp;<a href="http://www.fanfaresansfrontieres.org" target="_blank">Fanfare Sans Frontières</a> y hemos creado la asociación Brasspackers para ayudar con la música a niños y jóvenes con difícil acceso a la educación.
+			<br>
+			<br>
+		</p>
+	</td>
+	<td style="width: 5%;">
+	</td>
+	<td>
+		<h2><a href="#lien_projet">POR QUÉ ESTE PROYECTO</a></h2>
+		<h2><a href="#lien_action">nUESTRA ACCIóN ALLí</a></h2>
+		<h2><a href="#lien_musique">LO QUE APORTA LA MUSICA</a></h2>
+		<h2><a href="#lien_groupe">eL groupO</a></h2>
+		<h2><a href="#lien_reussite">EL éxito de nuestra acción</a></h2>
+	</td>
+</tr>
+</tbody>
+</table><h2 style="margin-left: 60px;"></h2><h2 style="margin-left: 60px;"><a href="#lien_reussite"></a></h2><h2 id="lien_projet" style="text-align: center;"></h2><h2 id="lien_projet" style="text-align: justify;">¿Por qué este proyecto ?</h2><p>
+	La música es vital para nosotros. Todos tenemos el mismo deseo: compartir esta pasión , y transmitirla! Nos dirigimos a los niños del mundo, a los que están en riesgo social y/o que no tienen fácil acceso a la cultura y/o la educación. Nos parece esencial que la música contribuye a su desarrollo, ya que ha contribuido al nuestro.</p><p>
+	Creemos que el despertar musical ayudará mucho a estos jóvenes desfavorecidos, y les permitirá salir de su vida cotidiana.</p><p>
+	La apertura musical y cultural que queremos ofrecerles, les permitirá restituir la confianza en sí mismos, despertar su creatividad, ya que, les ayudará a vivir y compartir en grupo.</p><p style="text-align: justify;"></p><p style="text-align: justify;"></p><h2 style="text-align: center;"><img src="/images/fsf/2011-03-21.jpg" alt="" style="width: 600px;"></h2><h2 id="lien_action" style="text-align: justify;">¿Qué
+será nuestra acción?
+</h2><p>
+	Nuestra acción durará desde enero hasta julio 2015, durante este tiempo queremos intervenir en tres países diferentes en un período de dos meses cada uno. Dedicaremos este tiempo al desarrollo de cada niño a través de diversas actividades centradas en la música.</p><p>
+	Primero, queremos conocer a los niños , ganar su confianza y fomentar su interés. Nos presentaremos a ellos a través de un concierto y el primer contacto se hará con actividades divertidas. Estas se desarrollarán en talleres de sensibilización musical centrados en el desarrollo personal de los niños.</p><p>
+	Los talleres realizados durante estos dos meses permitirán a los niños escuchar a los demás y a ellos mismos, además de familiarizarse con los conceptos de sonido y ritmo. Estos talleres irán desde el canto, hasta la fabricación de instrumentos con materiales reciclados, pasando por el corpo-ritmo y la iniciación a diferentes instrumentos. Entonces, los niños podrán entender diferentes aspectos del aprendizaje y de la práctica musical. Estos talleres también conducirán a la creación de un proyecto de grupo como un espectáculo o un concierto.</p><p>
+	Como banda, también podríamos ayudar a las asociaciones que trabajan con nosotros, al ir realizando diversas prestaciones musicales. Esta ventaja podrá ayudarles a tener más visibilidad y a recaudar fondos.</p><p style="text-align: justify;"></p><h2 style="text-align: center;"><img src="/images/fsf/2011-05-30.jpg" alt="" style="width: 600px;"></h2><h2 id="lien_musique" style="text-align: justify;">¿Qué
+aporta la música?
+</h2><p>
+	- Es un lenguaje universal! Permite crear fácilmente las relaciones y promueve el intercambio, la apertura y el compartir.</p><p>
+	- Tocar música permite al niño desarrollarse en el mundo exterior y afirmar su identidad. Lo ayuda a desarrollar la escucha a los demás, la conciencia de grupo y el respeto por el trabajo de otros.</p><p>
+	- La música estimula la auto-expresión, mientras desarrolla la creatividad y la imaginación. Permite al niño ganar confianza.</p><p>
+	- La práctica de la música mejora la concentración, la atención y la perseverancia. Esta es una herramienta educativa real que supera las dificultades de aprendizaje clásico .&nbsp;</p><p style="text-align: justify;"></p><h2 style="text-align: center;"><img src="/images/fsf/1476494_475852889200613_1753452880_n.jpg" alt="" style="font-family: Verdana; font-size: small; text-align: justify; width: 600px;"></h2><h2 id="lien_groupe" style="text-align: justify;">el groupo</h2><p>
+	Todos estamos en segundo año en la École Centrale de París, lo que equivale al cuarto año de estudios superiores. Nuestra escuela está considerada como una de las escuelas de ingeniería más prestigiosas de Francia. La elaboración de nuestro proyecto encaja perfectamente en nuestra formación y nuestra escuela nos apoya en su implementación.</p><p>
+	No olvidemos que somos ante todo un grupo de amigos que disfrutan de hacer música juntos. Hoy el resultado es una banda llena de energía con un repertorio original de fácil acceso y festivo!</p><p>
+	Tenemos en el grupo un miembro de la televisión de nuestra escuela, que va a producir una película y una exposición de fotografía al final de nuestro proyecto. Este trabajo permitirá dar visibilidad en Francia a las ONG locales, promover nuestro proyecto, mostrar nuestros éxitos, dificultades, y sobre todo dar gusto a otros de embarcarse en un proyecto solidario.</p><p style="text-align: justify;"></p><h2 style="text-align: center;"><img src="/images/fsf/2011-04-15.jpg" alt="" style="width: 600px;"></h2><h2 id="lien_reussite" style="text-align: justify;">¿Cómo
+garantizar el éxito de nuestra acción?
+</h2><p>
+	Queremos poder ayudara los niños lo mejor que se pueda teniendo en cuenta nuestras capacidades y sus necesidades.</p><p>
+	Por nuestra parte, seguimos diferentes formaciones que nos dan los conocimientos pedagógicos y las herramientas que necesitamos para construir y animar las actividades que haremos con los niños.</p><p>
+	Finalmente, queremos trabajar en conjunto con las diversas ONGs que nos apoyen para construir este proyecto juntos. Esto nos permitirá adaptar nuestro proyecto según la diversidad de situaciones que encontraremos.</p><p style="text-align: justify;"></p>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        </script><script id="fanfare_template" type="text/template">
+          <div class='article_container'>
+
+            <div class='article' data-page="fanfare" id="0" onclick='redact(this);'>
+
+              <table>
+<tbody>
+<tr>
+	<td style="width: 46%;">
+		<h1><strong>Les BrassPackers</strong></h1>
+		<p style="text-align: justify;">
+			<strong></strong>Les Brasspackers sont&nbsp;avant tout une<strong> bande d’amis</strong> qui saura vous faire <strong>danser</strong>, bouger, sauter, ramper sur des thèmes endiablés issus d'un kaléidoscope musical à nul autre pareil !
+		</p>
+		<p style="text-align: justify;">
+		Issus en grande partie de La Band’à Joe, la fanfare de l’Ecole Centrale Paris, les membres des BrassPackers sont imprégnés du monde des fanfares ‘Bozarts’, de l’ambiance des férias et des soirées étudiantes qu’ils ont souvent embrasées : Des Féria comme à Vic, en Arles ou à Collioure, et des festivals commes «Les Sens de l’Art » ou Chinon en fanfare.
+		</p>
+		<p style="text-align: center;">
+			<img src="http://www.brasspackers.org/images/groupe.jpg" style="width: 383px;">
+		</p>
+	</td>
+	<td style="width: 54%;text-align: justify;">
+		<h1 style="text-align: center;"></h1>
+		<h1 style="text-align: center;"><img src="http://www.brasspackers.org/images/ski.jpg" style="width: 461px; font-size: 1em;" alt="On est beaux"></h1>
+		<h1 style="text-align: center;"><strong>Style Musical</strong></h1>
+		<p style="text-align: justify;">
+			Leur répertoire se compose de reprises de brass band New Orleans (Hypnotic, Youngblood Brass Band…), de morceaux de pop internationale revus et corrigés à la sauce cuivrée (California Dreamin’, Don’t Stop Me Now, Raspoutine…), de morceaux des balkans (Goran Bregovic, The No Smoking Orchestra…), de musique latine et chaloupée et enfin de compositions originales. Il y en a vraiment pour 
+			<strong>tous les goûts</strong>.
+		</p>
+		<p style="text-align: justify;">
+			Un tempo sans limite, des cuivres survoltés, des basses explosives : voilà ce qui transforme chaque concert des&nbsp;BrassPackers&nbsp;en un concentré d’énergie et de bon humeur. &nbsp;&nbsp;
+		</p>
+	</td>
+</tr>
+</tbody>
+</table>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        </script><script id="reseau_template" type="text/template">
+          <div class='article_container'>
+
+            <div class='article' data-page="reseau" id="0" onclick='redact(this);'>
+
+              <h1 style="text-align: center;">FANFARE SANS FRONTIÈRES</h1><p>L'association Fanfare Sans Frontières a pour vocation de mettre en relation des artistes avec des enfants du
+monde. C'est un noyau autour duquel gravitent des fanfares qui désirent partager leur
+passion de la musique, ainsi que des structures prenant en charge des enfants défavorisés.</p><p>Fanfare Sans frontières a pour but&nbsp;</p><p>• De promouvoir et de soutenir les projets semblables au nôtre</p><p>• De favoriser le partage d'expérience entre les différents fanfares qui sont parties ou qui s'apprettent à le faire</p><p>• De pérenniser les relations avec les les associations locales et les partenaires</p><p>Tous les détails sont sur le site&nbsp;<a href="http://fanfaresansfrontieres.org" target="_blank">fanfaresansfrontieres.org</a></p><p style="text-align: center;"><a href="http://www.fanfaresansfrontieres.org/" target="_blank"><img src="images/fsf_logo.png" style="width: 573px;" alt=""></a></p><p style="text-align: center;"><a href="fanfaresansfrontieres.org" target="_blank"></a></p>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        </script><script id="partenaires_template" type="text/template">
+          <div class='article_container'>
+
+            <div class='article' data-page="partenaires" id="0" onclick='redact(this);'>
+
+              <table>
+<tbody>
+<tr>
+	<td style="width: 60%;">
+		<h1>NOS ONG PARTENAIRES</h1>
+		<p>
+			Nous allons nous rendre dans des associations locales, afin de soutenir le travail qu'ils effectuent pour aider les enfants les plus démunis à avoir accès à l'éducation.
+		</p>
+		<p>
+			Nos partenaires sont&nbsp;</p><p>- L'association Virlanie à Manille</p><p>- L'association "A hauteur d'homme, auteur d'humanité" à Katmandou</p><p>- L'association Kantaya à Lima</p>
+	</td>
+	<td>
+		<p style="text-align: center;">
+			<img src="/images/fsf/2011-05-30.jpg" style="width: 307px;">
+		</p>
+	</td>
+</tr>
+</tbody>
+</table>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        
+          <div class='article_container'>
+
+            <div class='article' data-page="partenaires" id="1" onclick='redact(this);'>
+
+              <h1>Partenariats avec les écoles Francaises</h1><p>Nous mettons en place des partenariats avec des écoles de la région afin de partager notre projet avec les enfants.</p><p>Ce partenariat a plusieurs objectifs</p><p>- Proposer à des enfants des ateliers d'éveil musical</p><p>- Sensibiliser les jeunes à la solidarité internationale</p><p>- Faire participer ces élèves au succès de notre projet à travers une course solidaire</p><p>- Créer une dynamique d'échange entre les classes françaises et celles dans lesquelles nous irons</p><p style="text-align: center;"><img src="/images/tsbb3.jpg" style="width: 601px;"></p><p style="text-align: center;"></p><h2>Ateliers de développement personnel</h2><p>  C’est ce à quoi nous sommes formés. Comme pour les associations dans lesquelles nous allons agir, les ateliers effectués permettront aux enfants de se familiariser avec les notions de son, de rythme, d’écoute des autres et de soi. Les séances comportent des essais d’instruments, des exercices de chants, de corpo-rythme et toute l’attention sera portée à l’écoute de soi, des autres, aux notions de dialogue et de partage.</p><h2>  Sensibilisation à la solidarité internationale</h2><p>  Le rôle à venir des pays en développement est un sujet qui touche chacun. Certains seront sensibles aux problèmes de pauvreté et de conditions de vie tandis que d’autres se sentiront concernés par les enjeux de partage de l’énergie et des richesses ou les droits fondamentaux de l’enfant et de la femme… Nous avons des expériences à partager et vos élèves en ont aussi sans aucun doute. Ces discussions seront animées de manière dynamique, avec des supports vidéo, des débats où chacun pourra se sentir libre de parler.</p><h2>  Course solidaire</h2><p>  Une telle course est une formidable opportunité pour les enfants de participer concrètement à une action de solidarité internationale. Chaque participant trouve des sponsors  qui peuvent être des parents, des amis, des membres de la famille. Ces sponsors font une promesse de don symbolique pour chaque tour couru. L’élève accomplit ses tours de stade et la somme remportée (parfois durement !) par l’élève grâce à ses sponsors permettra au projet Brasspackers d’organiser les ateliers prévus dans les associations de pays en développement, d’acheter du matériel, de venir en aide au développement de ses associations. Bien sûr, la totalité de l’argent que nous récoltons est consacrée au projet et ne couvre aucunes de nos dépenses personnelles. Cette course solidaire serait organisée par notre équipe, avec les conseils éventuels de vos professeurs de sport (pour le choix d’un lieu de course et des consignes de sécurité).  Cette course solidaire serait une manifestation festive car les associations centraliennes nous permettent de monter des stands de magie, de jonglage et de musique facilement.</p><h2>échanges</h2><p>Nous espérons que cet échange continuera après notre départ. Vous aurez bien sûr de nos nouvelles tout au long de notre voyage. D’autres initiatives pourraient aussi se mettre en place suite à ces différentes activités. Nous pourrions par exemple envisager un échange entre vos élèves et les enfants des ONG dans lesquelles nous nous rendrons.<br><br></p><h1></h1>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        
+          <div class='article_container'>
+
+            <div class='article' data-page="partenaires" id="2" onclick='redact(this);'>
+
+              <h1 id="emeriau">École partenaire</h1><p>
+	<em>
+	Classes de CP et CE2 - Ecole Elémentaire Publique Emeriau -&nbsp;10 rue Emeriau, Paris 15e<br>
+	<br>
+	</em></p><p>
+	Depuis le mois d'avril, nous avons animé six ateliers de chant et de rythme dans deux classes de l'école élémentaire Emeriau. En ateliers chant, à travers les échauffements et les chansons, nous avons pu aborder les notions d'écoute, de justesse, d'harmonie. En ateliers rythme les enfants ont également pu travailler le tempo, la coordination, l'improvisation. C'est un vrai plaisir de travailler avec ces enfants curieux et enthousiastes, et cela nous motive encore plus pour notre projet !</p><p>
+	Nous organisons également avec cinq classes une course solidaire afin que les élèves puissent eux aussi apporter leur soutien aux enfants défavorisés que nous voulons aider.</p><p>
+	Enfin nous participerons à la kermesse de l'école, le 1er juillet prochain, et nous offrirons un petit concert pour remercier les enfants !</p>
+<table>
+<tbody>
+<tr>
+	<td>
+		<img src="/images/ecole_emeriau/ecole_emeriau_2.jpg" style="width: 280px;">
+	</td>
+	<td>
+		<img src="/images/ecole_emeriau/ecole_emeriau_3.jpg" style="width: 280px;">
+	</td>
+	<td>
+		<img src="/images/ecole_emeriau/ecole_emeriau_1.jpg" style="width: 280px;">
+	</td>
+</tr>
+<tr>
+	<td>
+		<img src="/images/ecole_emeriau/ecole_emeriau_9.jpg" style="width: 280px;">
+	</td>
+	<td>
+		<img src="/images/ecole_emeriau/ecole_emeriau_8.jpg" style="width: 280px;">
+	</td>
+	<td>
+		<img src="/images/ecole_emeriau/ecole_emeriau_4.jpg" style="width: 280px;">
+	</td>
+</tr>
+<tr>
+	<td>
+		<img src="/images/ecole_emeriau/ecole_emeriau_7.jpg" style="width: 280px;">
+	</td>
+	<td>
+		<img src="/images/ecole_emeriau/ecole_emeriau_5.jpg" style="width: 280px;">
+	</td>
+	<td>
+		<img src="/images/ecole_emeriau/ecole_emeriau_6.jpg" style="width: 280px;">
+	</td>
+</tr>
+</tbody>
+</table>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        </script><script id="soutien_template" type="text/template">
+          <div class='article_container'>
+
+            <div class='article' data-page="soutien" id="0" onclick='redact(this);'>
+
+              <table>
+<tbody>
+<tr>
+	<td style="width: 55%;">
+		<h1>Soutenez nous !</h1>
+		<p>
+			Si vous aimez notre projet et si vous voulez contribuer au développement de ces enfants, n'hésitez pas à nous soutenir, nous avons besoin de votre aide !
+		</p>
+		<p>
+			Vous pouvez nous faire parvenir vos dons ou vos propositions de partenariats en 
+			<a href="http://brasspackers.campus.ecp.fr/?page=contact">contactant notre président</a>.
+		</p>
+		<p>
+			Si vous avez des contacts dans des entreprises susceptibles de nous financer ou de nous proposer du matériel, si vous connaissez des écoles ou des ONG qui pourraient être intéressés par notre projet, ou encore dans vos connaissance quelqu'un cherche une fanfare pour animer un événement, n'hésitez pas à leurs faire connaître notre projet ou à nous transmettre le contact via 
+			<a href="mailto:brasspackers@gmail.com">brasspackers@gmail.com</a> !
+		</p>
+		<br>
+		<strong style="font-family: Verdana; font-size: small; text-align: justify;">Merci d'avance pour votre soutien et votre générosité, de la part de tous les Brasspackers.</strong>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</td>
+	<td>
+		<p>
+			<img src="/images/2011-05-27_2.png" style="width: 390px; float: right;" alt="">
+		</p>
+	</td>
+</tr>
+</tbody>
+</table>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        
+          <div class='article_container'>
+
+            <div class='article' data-page="soutien" id="1" onclick='redact(this);'>
+
+              <h1>Ils nous soutiennent :</h1>
+<td">
+</td">
+<table>
+<tbody>
+<tr>
+	<td style="width: 4%; text-align: right">
+	</td>
+	<td style="width: 26%; text-align: center">
+		<br>
+		<img src="/images/fsf_logo.png" style="font-family: Verdana; font-size: small; text-align: justify; width: 208px;" alt="">
+	</td>
+	<td style="width: 7%; text-align: right">
+	</td>
+	<td style="width: 26%; text-align: right">
+		<img src="/images/logo_centraleparis-300dpi.png" style="width: 176px;" alt="">
+	</td>
+	<td style="width: 7%; text-align: right">
+	</td>
+	<td style="width: 26%; text-align: right">
+		<img src="/images/logo asso centraliens.png" alt="" style="width: 197px;">
+	</td>
+	<td style="width: 4%; text-align: right">
+	</td>
+</tr>
+<tr>
+	<td>
+	</td>
+	<td>
+		<p style="text-align: center;">
+			Fanfare Sans Frontières
+		</p>
+	</td>
+	<td>
+	</td>
+	<td>
+		<p style="text-align: center;">
+			École Centrale Paris
+		</p>
+	</td>
+	<td>
+	</td>
+	<td>
+		<p style="text-align: center;">
+			Association des Centraliens
+		</p>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td style="text-align: center;">
+	</td>
+	<td style="text-align: center;">
+	</td>
+	<td style="text-align: center;">
+	</td>
+	<td style="text-align: center;">
+	</td>
+	<td style="text-align: center;">
+	</td>
+	<td>
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+	</td>
+	<td style="text-align: center;" "="">
+		<img src="/images/logo_bde.png" style="width: 171px;">
+	</td>
+	<td style="text-align: center;" "="">
+	</td>
+	<td style="text-align: center;" "="">
+		<br>
+		<br>
+		<img src="/images/logo_sceaux.png" style="width: 202px;">
+	</td>
+	<td>
+	</td>
+	<td style="text-align: center;" "="">
+			<img src="https://googledrive.com/host/0ByNyKS7LWsgJaGVkX3gxSjB2d2s/logo-saint-savinien.png" style="width: 137px;">
+	</td>
+	<td>
+	</td>
+</tr>
+<tr>
+	<td>
+	</td>
+	<td style="text-align: center;" "="">
+		<p style="text-align: center;">
+			Bureau des élèves de l'ECP
+		</p>
+	</td>
+	<td style="text-align: center;" "="">
+	</td>
+	<td style="text-align: center;" "="">
+		<p style="text-align: center;">
+			Ville de Sceaux
+		</p>
+	</td>
+	<td>
+	</td>
+	<td>
+		<p style="text-align: center;">
+			Ville de Saint Savinien Sur Charente
+		</p>
+	</td>
+	<td>
+	</td>
+</tr>
+</tbody>
+</table>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        
+          <div class='article_container'>
+
+            <div class='article' data-page="soutien" id="2" onclick='redact(this);'>
+
+              <h1></h1><h1>POURQUOI NOUS SOUTENIR ?
+</h1><p>Si vous aimez notre projet et si vous voulez contribuer au développement de ces enfants, n'hésitez pas à nous soutenir, nous avons besoin de votre aide !</p><h2>Solidarité</h2><p>En nous aidant, vous participez au succès de notre action auprès des enfants ! Votre image sera
+associée aux valeurs qui nous motivent : solidarité, partage et esprit d’équipe.</p><h2>Visibilité</h2><p>Vous pourrez bénéficier d’une grande visibilité auprès des musiciens et des étudiants (notamment de l’Ecole
+Centrale) durant nos soirées de départ et de retour, mais aussi grâce à la réalisation d’un film
+documentaire sur notre projet diffusé le plus largement possible (écoles, chaînes
+de télévisions solidaires...)</p><h2>Communication</h2><p>Vous bénéficierez d’un suivi efficace de votre investissement, notamment au travers&nbsp;de notre blog dans lequel vous trouverez des témoignages des bénéficiaires de notre action.</p><h2>Animation</h2><p>En tant que groupe de musique, nous pouvons aussi nous mettre à votre disposition pour
+animer et partager notre expérience lors d’un événement de votre choix.&nbsp;</p>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        
+          <div class='article_container'>
+
+            <div class='article' data-page="soutien" id="3" onclick='redact(this);'>
+
+              <h1>Où va votre argent ?</h1><p>
+	Nous réalisons ce projet bénévolement. Nous travaillons depuis Septembre 2013 à sa préparation, et une fois sur place nous consacrerons notre temps aux enfants.&nbsp;</p><p>
+	Notre budget prévisionnel total est estimé à 59 800 €, et voici le détail de ce qui est nécessaire à la mise en place de notre action :</p>
+<table>
+<tbody>
+<tr>
+	<td style="width: 50%;">
+		<img src="/images/depenses.png" style="width: 434px;">
+	</td>
+	<td style="width: 50%;">
+		<br>
+		<br>
+		<br>
+		<img src="images/recettes.png" style="font-family: Verdana; font-size: small; text-align: justify; width: 348px;">
+	</td>
+</tr>
+</tbody>
+</table><p>
+	Vous pouvez bien sur choisir l’usage que vous voulez voir attribué à vos dons.&nbsp;</p><p>
+	En tant qu'entreprise ou collectivité, vous pouvez par exemple choisir d’être notre partenaire santé ou communication, ou choisir de subventionner certaines semaines de notre action : par exemple notre action dans un pays des trois pays dans lesquels nous irons représente entre 6 000 et 8 000 € selon le pays.</p><p>
+	Nous avons également besoin de matériel musical et audiovisuel : en tant que fabriquant ou revendeur, vous pouvez nous sponsoriser !</p><p>
+	Enfin, les petits ruisseaux formant les grandes rivières, tous les dons nous permettront de mener à terme notre action ! Vous participerez ainsi notamment à notre formation et à la mise en place des activités avec les enfants, et plus généralement au succès de notre action.&nbsp;</p>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        </script><script id="contact_template" type="text/template">
+          <div class='article_container'>
+
+            <div class='article' data-page="contact" id="2" onclick='redact(this);'>
+
+              <h1>Contact</h1>
+<p>
+	Vous pouvez nous envoyer un mail à l'adresse 
+	<a class="smarterwiki-linkify" href="mailto:brasspackers@gmail.com">brasspackers@gmail.com</a>.
+</p>
+<p>
+	Vous pouvez également contacter directement François Dorey, le président pour obtenir des informations sur le projet, ou Théo Lemonnier, responsable des prestations, pour obtenir des informations sur de possibles prestations. Vous trouverez leurs coordonnées ci-dessous
+</p>
+<table>
+<tbody>
+<tr>
+	<td style="width: 50%; text-align: center;">
+		<fieldset>
+			<legend>
+			<h2 style="text-align: center;">Président</h2>
+			</legend>
+			<br>
+			<p style="text-align: center;">
+				François DOREY
+				<br>
+				<a href="mailto:francois.dorey@student.ecp.fr">francois.dorey@student.ecp.fr</a><br>
+			+33 6 29 25 73 99
+			</p>
+			<br>
+		</fieldset>
+	</td>
+	<td style="text-align: center;">
+		<fieldset>
+			<legend>
+			<h2 style="text-align: center;">Responsable Prestations</h2>
+			</legend>
+			<br>
+			<p style="text-align: center;">
+				Théo LEMONNIER
+				<br>
+				<a href="mailto:theo.lemonnier@student.ecp.fr">theo.lemonnier@student.ecp.fr</a><br>
+			+33 6 84 85 79 26
+			</p>
+			<br>
+		</fieldset>
+	</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+	<td style="width: 50%;">
+		<h2>Notre adresse</h2>
+		<p>
+			Brasspackers
+		</p>
+		<p>
+			Résidence de l'École Centrale 
+			<br>
+			5 avenue Sully Prudhomme &nbsp; &nbsp;
+			<br>
+			92290 Châtenay-Malabry
+		</p>
+		<h2>
+		<br>
+		<br>
+		FACEBOOK
+		</h2>
+		<p>
+			<a href="http://www.facebook.com/TheBrasspackers" target="_blank">www.facebook.com/TheBrasspackers</a>
+		</p>
+	</td>
+	<td>
+		<p>
+			<img src="/images/2011-05-27_2.png" alt="" style="float: right; margin: 0px 0px 10px 10px;">
+		</p>
+	</td>
+</tr>
+</tbody>
+</table>
+<h2></h2>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        </script><script id="accueil_template" type="text/template">
+          <div class='article_container'>
+
+            <div class='article' data-page="accueil" id="0" onclick='redact(this);'>
+
+              <h1 style="margin-bottom:0">Actus</h1><p>
+	On parle de nous dans le&nbsp;<a href="http://etudiant.lefigaro.fr/vie-etudiante/news/detail/article/12-etudiants-et-une-fanfare-pour-aider-les-enfants-a-travers-le-monde-9142/" target="_blank">Figaro</a> !</p><p>
+	<a href="http://etudiant.lefigaro.fr/vie-etudiante/news/detail/article/12-etudiants-et-une-fanfare-pour-aider-les-enfants-a-travers-le-monde-9142/" target="_blank"><img src="https://googledrive.com/host/0ByNyKS7LWsgJaGVkX3gxSjB2d2s/figaro.jpg" alt="" style="width: 432px;"></a></p>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        </script><script id="testV2_template" type="text/template">
+          <div class='article_container'>
+
+            <div class='article' data-page="testV2" id="0" onclick='redact(this);'>
+
+              <table>
+<tbody>
+<tr>
+	<td style="width: 55%;">
+	</td>
+	<td style="width:5%;">
+	</td>
+	<td style="text-align: right;">
+		<a href="http://brasspackers.org/?page=projet"><img src="/images/fr.png" alt="" style="width: 30px; font-family: Verdana; font-size: small; text-align: justify;"></a> &nbsp; <a href="http://brasspackers.org/?page=projet_en"><img src="/images/en.png" alt="" style="width: 30px; font-family: Verdana; font-size: small; text-align: justify;"></a> &nbsp; <a href="http://brasspackers.org/?page=projet_es"><img src="/images/es.png" alt="" style="width: 30px; font-family: Verdana; font-size: small; text-align: justify;"></a>
+	</td>
+</tr>
+<tr>
+	<td style="width: 55%;">
+		<h1>Le Projet Brasspackers</h1>
+		<p>
+			Brasspackers est un groupe composé de 11 étudiants de l’Ecole Centrale Paris, tous musiciens. Inspirés par des projets de fanfares comme Babel Brass Band et leur dimension de partage et de solidarité, nous avons adhéré au réseau 
+			<a href="http://www.fanfaresansfrontieres.org/" style="font-family: Verdana; font-size: small; text-align: justify;">Fanfare Sans Frontières</a> et avons créé l’association loi 1901 Brasspackers pour venir en aide grâce à la musique à des enfants et des jeunes qui n’auraient pas facilement accès à l’éducation.
+		</p>
+	</td>
+	<td style="width: 5%;">
+	</td>
+	<td>
+		<h2><a href="#lien_projet">Pourquoi un tel projet</a></h2>
+		<h2><a href="#lien_action">notre action sur place</a></h2>
+		<h2><a href="#lien_musique">Ce Qu’apporte la musique</a></h2>
+		<h2><a href="#lien_groupe">Le groupE</a></h2>
+		<h2><a href="#lien_reussite">la réussite de notre action</a></h2>
+	</td>
+</tr>
+</tbody>
+</table><iframe src="https://3a9ad3f4fda71e2cf1b799d9510f22967cf4c985.googledrive.com/host/0B9Kpa4x1BkuKN0pGSERGMlJSUnM/" class="world">
+</iframe><h2 style="margin-left: 60px;"></h2><h2 style="margin-left: 60px;"><a href="#lien_reussite"></a></h2><h2 id="lien_projet" style="text-align: center;"></h2><h2 id="lien_projet" style="text-align: justify;">Pourquoi un tel projet ?
+</h2><p style="text-align: justify;">
+	La musique est vitale pour chacun d’entre nous. Nous avons tous la même envie : partager cette passion, et la transmettre ! Nous nous sommes alors tournés vers les enfants du monde, ceux qui sont laissés pour compte et qui n’ont pas facilement accès à la culture ou à l’éducation. Il nous parait essentiel que la musique contribue à leur épanouissement comme elle a contribué au notre.</p><p style="text-align: justify;">
+	Nous pensons que l’éveil musical pourra beaucoup apporter à ces jeunes défavorisés et leur permettra de sortir de leur quotidien.</p><p style="text-align: justify;">
+	L’ouverture culturelle et musicale que nous voulons leur offrir leur redonnera confiance en eux, éveillera leur créativité et les fera vivre et échanger au sein d’un groupe.</p><p style="text-align: justify;"></p><h2 style="text-align: center;"><img src="/images/fsf/2011-03-21.jpg" alt="" style="width: 600px;"></h2><h2 id="lien_action" style="text-align: justify;">Quelle sera notre action sur place ?</h2><p>
+	Notre action se déroulera de Janvier
+à Juillet 2015, période pendant laquelle nous voulons intervenir dans 3 pays
+différents. La durée de notre action dans chaque pays sera de deux mois en
+moyenne. Nous consacrerons ce temps à l’épanouissement de chaque enfant à
+travers différentes actions centrées sur la musique.</p><p>
+	Pour cela, nous nous mettons à disposition d’une association œuvrant pour
+le développement et l’éducation des enfants. Nous travaillons en collaboration
+avec ces associations en amont de venue, et ceci continuera bien sur une fois
+sur place. Ces associations ont une grande expérience et connaissent très bien
+leurs enfants et le contexte social dans lequel ils évoluent. Ceci nous
+permettra de bâtir notre projet de la manière la plus pertinente possible.</p><p style="text-align: justify;">
+	Nous désirons d’abord rencontrer les enfants, gagner leur confiance et susciter leur intérêt. Nous nous présenterons à eux au travers d’un concert et le premier contact se fera grâce à des activités ludiques. Celles-ci évolueront vers des ateliers d’éveil musical axés sur le développement personnel des enfants.</p><p style="text-align: justify;">
+	Les ateliers effectuées pendant ces deux mois permettront notamment aux enfants de se familiariser avec les notions de son, de rythme, d’écoute des autres et de soi. Ces ateliers iront du chant à la fabrication d’instruments avec des matériaux de récupération en passant par le corpo-rythme et par l’initiation à divers instruments. Ainsi les enfants pourront appréhender différents aspects de l’apprentissage et de la pratique de la musique. Ces ateliers aboutiront également à la mise en place d’un projet de groupe comme un spectacle ou un concert.</p><p style="text-align: justify;">
+	En tant que fanfare, nous pourrions également aider les associations dans lesquelles nous nous rendrons en réalisant diverses prestations musicales. Cet atout peut notamment permettre de leur donner plus de visibilité et de lever des fonds.</p><h2 style="text-align: center;"><img src="/images/fsf/2011-05-30.jpg" alt="" style="width: 600px;"></h2><h2 id="lien_musique" style="text-align: justify;">Qu’apporte la musique ?</h2><p style="text-align: justify;">
+	- C’est un langage universel ! Elle permet de tisser facilement des liens et favorise l’échange,  l’ouverture et le partage.</p><p style="text-align: justify;">
+	- Faire de la musique permet à l’enfant de se projeter vers le monde extérieur tout en affirmant son identité. Elle permet de développer l’écoute des autres, la conscience du groupe et le respect du travail des autres. Nous voulons ainsi développer la sociabilité des enfants.</p><p style="text-align: justify;">
+	- La musique stimule l’expression de soi, tout en développant la créativité et l’imagination. Elle permet à l’enfant de se valoriser au sein d’un groupe et à ses propres yeux, et ainsi de gagner confiance en lui.
+	<br>
+	- La pratique de la musique favorise la concentration, l’attention et la persévérance. C’est donc un réel outil éducatif qui permet de surmonter les difficultés de l’apprentissage classique.</p><h2 style="text-align: center;"><img src="/images/fsf/1476494_475852889200613_1753452880_n.jpg" alt="" style="font-family: Verdana; font-size: small; text-align: justify; width: 600px;"></h2><h2 id="lien_groupe" style="text-align: justify;">
+Le groupE</h2><p style="text-align: justify;">
+	Nous sommes tous en deuxième année à l’École Centrale Paris, ce qui équivaut à un niveau BAC+4. Notre école est considérée comme l’une des plus prestigieuses écoles d’ingénieurs de France. La préparation de notre projet s’inscrit parfaitement dans notre formation et l’école nous suit et nous supporte dans sa réalisation.</p><p style="text-align: justify;">
+	Ne l’oublions pas, nous sommes avant tout un groupe d’amis qui aiment faire de la musique ensemble. Le résultat aujourd'hui est une fanfare pleine d'énergie au répertoire musical original, facile d'accès et festif !</p><p style="text-align: justify;">
+	Nous avons parmi nous un camarade membre de la télévision étudiante de l’école qui réalisera un film et une exposition photo à l’issue de notre projet. Ce travail permettra de donner de la visibilité en France aux ONG locales, de faire connaître notre projet, nos réussites et nos difficultés mais aussi de donner goût à d’autres de se lancer dans un projet humanitaire ou solidaire !</p><h2 style="text-align: center;"><img src="/images/fsf/2011-04-15.jpg" alt="" style="width: 600px;"></h2><h2 id="lien_reussite" style="text-align: justify;">Comment assurer la réussite de notre action ?</h2><p style="text-align: justify;">
+	Nous voulons pouvoir aider au mieux  les enfants compte tenu de nos capacités et de leurs besoins.</p><p style="text-align: justify;">
+	De notre côté, nous suivons différentes formations qui nous apportent les connaissances pédagogiques et les outils dont nous avons besoin pour construire et animer les activités que nous ferons avec les enfants.</p><p style="text-align: justify;">
+	Enfin nous souhaitons travailler main dans la main avec les différents ONG dans lesquelles nous interviendrons afin de construire ce projet ensemble. Ceci nous permettra d’adapter ce que nous ferons à la diversité des situations que nous rencontrerons.&nbsp;</p>
+            </div>
+
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        </script>  <script src="js/script.js"></script>
+  </body>
+  </html>
+
+

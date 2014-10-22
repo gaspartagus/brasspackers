@@ -1,13 +1,14 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>The BrassPackers, Fanfare Solidaire</title>
-  <link href="ico3.png" rel="icon" type="image/png">
+  <link href="graphismes/ico3.png" rel="icon" type="image/png">
   <link href="style.css" rel="stylesheet">
+  <script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>
   <link href="redactor.css" rel="stylesheet">
-  <script src="jquery-2.0.3.min.js" type="text/javascript"></script>
-  <script src="jquery.cookie.js" type="text/javascript"></script>
-  <script src="redactor.min.js" type="text/javascript"></script>
+  <script src="js/redactor.min.js" type="text/javascript"></script>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <script>
 
@@ -28,107 +29,114 @@
 
 <body class="clearfix">
   <div class="clearfix" id="main">
-      <div id="onglets">
-          <div id="onglets_in">
-              <div id="onglets_middle">
-                  <a class="onglet img" href="#fanfare" id="fanfare">La Fanfare</a>
-                  <a class="onglet" href="#projet" id="projet">Le Projet</a>
-                  <a class="onglet" href="#soutien" id="soutien">Soutenez Nous</a>
-                  <a class="onglet" href="#reseau" id="reseau">Réseau FSF</a>
-                  <a class="onglet" href="#partenaires" id="partenaires">Partenaires</a>
-                  <a class="onglet" href="#contact" id="contact">Contact</a>
-                  <a class="img" href="#accueil" id="accueil"></a>
-              </div>
-          </div>
-
-          <div id='logos'>
-              <a class="fsf img" href="http://fanfaresansfrontieres.org/" target="new"></a>
-              <a class="soundcloud img" href="https://soundcloud.com/brasspackers" target="new"></a>
-              <a class="fb img" href="https://www.facebook.com/TheBrasspackers" target="new"></a>
-              <a class="gmail img" href="mailto:brasspackers@gmail.com" target="new"></a>
-          </div>
+    <div id="onglets">
+      <div id="onglets_in">
+        <div id="onglets_middle">
+          <a class="onglet" href="#projet" id="projet">Projet Solidaire</a>
+          <a class="onglet" href="#partenaires" id="partenaires">ONG Partenaires</a>
+          <a class="onglet" href="#soutien" id="soutien">Nous Soutenir</a>
+          <a class="onglet img" href="#fanfare" id="fanfare">Prestations</a>
+          <a class="onglet" href="#actualites" id="actualites">Actualités</a>
+          <a class="img" href="#accueil" id="accueil"></a>
+        </div>
+        <div id='logos'>
+          <a class="fsf img" href="http://fanfaresansfrontieres.org/" target="new"></a>
+          <a class="soundcloud img" href="https://soundcloud.com/brasspackers" target="new"></a>
+          <a class="fb img" href="https://www.facebook.com/TheBrasspackers" target="new"></a>
+          <a class="gmail img" href="mailto:brasspackers@gmail.com" target="new"></a>
+        </div>
       </div>
+    </div>
 
-      <section class="clearfix" id="content">
-          <div class="fond" id="f_tete"></div>
+    <section class="clearfix" id="content">
+      <div class="fond" id="f_tete"></div>
 
-          <div class="fond" id="f_corps"></div>
+      <div class="fond" id="f_corps"></div>
 
-          <div class="fond" id='f_pied'></div>
+      <div class="fond" id='f_pied'></div>
 
-          <div id="content2"></div>
+      <div id="content2">
+        <div class="banniere">
+          <div class="image" data-url=""></div>
+          <div class="image" data-url=""></div>
+          <div class="pitch">
+            <p><span>Brasspackers</span> est un projet de <span>solidarité internationale</span>
+             mené par 12 jeunes musiciens, qui promeut <span>l'éveil des enfants défavorisés</span>
+             par la <span>musique</span> et l'<span>écoute</span>.</p>
+          </div>
+        </div>
+      </div>
       </section>
   </div>
 
   <div id="editer"></div>
   <?php
-      $pages = array("projet", "fanfare", "reseau", "partenaires", "soutien", "contact", "accueil","testV2");
+    $pages = array("projet","projet_en","projet_es", "fanfare", "reseau", "partenaires", "soutien", "contact", "accueil","testV2");
 
-      foreach ($pages as $page) {
+    foreach ($pages as $page) {
 
-        $sql_articles = "SELECT article, id, page
+      $sql_articles = "SELECT article, id, page
 
-                FROM articles
+              FROM articles
 
-                WHERE articles.page = '$page'
+              WHERE articles.page = '$page'
 
-                AND articles.date =
+              AND articles.date =
 
-                (
+              (
 
-                  SELECT MAX(date)
+                SELECT MAX(date)
 
-                  FROM articles a2
+                FROM articles a2
 
-                  WHERE a2.id = articles.id
+                WHERE a2.id = articles.id
 
-                  AND a2.page = articles.page
+                AND a2.page = articles.page
 
-                )
+              )
 
-                                    AND articles.etat = 'available'
+                                  AND articles.etat = 'available'
 
-                ORDER BY articles.id ASC
+              ORDER BY articles.id ASC
 
-              ";
-
-
-
-        $reponse = $bdd->query($sql_articles);
+            ";
 
 
 
-        ?><script id="<?php echo $page; ?>_template" type="text/template"><?php
+      $reponse = $bdd->query($sql_articles);
 
 
 
-        while ($donnees = $reponse->fetch())
+      ?><script id="<?php echo $page; ?>_template" type="text/template"><?php
 
-        {
 
-          ?>
 
-            <div class='article_container'>
+      while ($donnees = $reponse->fetch())
 
-              <div class='article' data-page="<?php echo $page ?>" id="<?php echo $donnees['id']; ?>" onclick='redact(this);'>
+      {
 
-                <?php echo $donnees['article'];  ?>
+        ?>
 
-              </div>
+          <div class='article_container'>
 
-              <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+            <div class='article' data-page="<?php echo $page ?>" id="<?php echo $donnees['id']; ?>" onclick='redact(this);'>
 
-              <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+              <?php echo $donnees['article'];  ?>
 
             </div>
-          <?php
-        }
-        ?></script><?php
-      }
 
-    ?>
-  <!--<script src="js/backbone/backbone.js"></script>
-  <script src="js/backbone/marionette.js"></script>-->
+            <button class='control' onclick='postSave(this);'>Sauvegarder</button>
+
+            <button class='control' onclick='effacer(this);'>Supprimer cet article</button>
+
+          </div>
+        <?php
+      }
+      ?></script><?php
+    }
+
+  ?>
   <script src="js/script.js"></script>
   </body>
   </html>
+

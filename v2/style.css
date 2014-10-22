@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    background-color: #F7F7F7;
+    /* background-color: #F7F7F7; */
     margin: 0;
 }
 
@@ -66,54 +66,39 @@ a:active {
     background-size: 50%;
 }
 
-#page {
-    display: none;
-}
-
-#session {
-    display: none;
-}
-
-#random {
-    position: absolute;
-    margin-left: -450px;
-    width: 900px;
-    left: 50%;
-    top: -100px;
-    box-shadow: grey 0 0 17px;
-    max-width: 100%;
-}
 
 #onglets {
-    position: absolute;
-    font-family: Helvetica;
+    position: fixed;
+    width: 100%;
+    height: 71px;
+    top: 0px;
+    margin: 0 auto 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.87);
+    font-family: Segoe Print;
     color: #f8ef62;
+    font-size: 19;
+    border-bottom: 1px solid rgba(114, 114, 114, 0.66);
+    border-top: 5px solid #89c6ff;
     /* text-shadow: #ffffbe 0 0 1px; */
     /* box-shadow: 0 0 5px #363636; */
-    margin: 0 auto 0;
-    background-size: 100% auto;
-    width: 100%;
-    height: 64px;
-    font-size: 19;
-    background-color: white;
-    border-bottom: 1px solid rgba(114, 114, 114, 0.66);
-    border-top: 1px solid rgba(114, 114, 114, 0.66);
-    top: 52px;
-    z-index: 1;
+    overflow: hidden;
 }
 
 #onglets a {
     text-decoration: none;
     color: #000000;
+    font-weight: bold;
 }
 
 #onglets_in {
     width: 100%;
-    height: 56.3px;
-    border-top: 2px solid rgba(158, 158, 158, 0.65);
-    border-bottom: 2px solid rgba(158, 158, 158, 0.65);
+    height: 60.3px;
+    border-top: 12px solid #ffac4e;
+    /* border-bottom: 2px solid rgba(158, 158, 158, 0.65); */
     position: absolute;
-    top: 2px;
+    top: 0px;
+    overflow: hidden;
 }
 
 #onglets_middle {
@@ -122,22 +107,22 @@ a:active {
     /* height: 3px; */
     position: absolute;
     /* background-color: black; */
-    top: 19px;
+    top: 15px;
 }
 
 .onglet {
     position: absolute;
-    width: 230px;
+    min-width: 114px;
 }
 
 #projet {
     /* top: 84px; */
-    left: -457px;
+    left: -433px;
 }
 
 #fanfare {
     /* top: 0; */
-    left: -340px;
+    left: 57px;
 }
 
 #reseau {
@@ -147,17 +132,17 @@ a:active {
 
 #soutien {
     /* top: 126; */
-    left: 105px;
+    left: -88px;
 }
 
 #partenaires {
     /* top: 81; */
-    left: -235px;
+    left: -266px;
 }
 
 #actualites {
     /* top: 171; */
-    left: 246px;
+    left: 180px;
 }
 
 #photos {
@@ -171,52 +156,68 @@ a:active {
 #accueil {
     width: 185px;
     height: 216px;
-    top: -102px;
-    left: -108px;
+    top: -95px;
+    left: -643px;
     background-image: url('graphismes/bpk-orange.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-#google_translate_element {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 109;
-}
-
 
 #logos {
     position: absolute;
 }
 
 #logos {
-    top: -41px;
-    right: 190px;
+    top: 16px;
+    right: 21px;
     /* background-color: red; */
 }
 
 #logos a {
-    width: 33px;
-    height: 30px;
+    width: 23px;
+    height: 23px;
     display: inline-block;
-    border-radius: 23px;
+    border-radius: 3px;
 }
 
 .gmail {
     background-image: url('graphismes/gmail.png');
+    width: 32px !important;
 }
 
 .fb {
     background-image: url('graphismes/fb.png');
+    width: 23px !important;
+    margin: 0 1px;
 }
 
 .fsf {
-    background-image: url('graphismes/fsf.jpg');
+    background-image: url('graphismes/fsf.png');
 }
 
 .soundcloud {
     background-image: url('graphismes/soundcloud.png');
+    width: 48px !important;
+}
+.banniere{
+    margin: 3em 10%;
+
+    background-color: rgb(137, 233, 255);
+    height: 12em;
+    border-radius: 2px;
+}
+.image{
+    
+}
+.pitch{
+    position: absolute;
+
+    width: 31em;
+    left: 22%;
+    top: 1em;
+    background-color: rgba(255, 255, 255, 0.71);
+    border-radius: 6px;
 }
 
 #bas {
@@ -354,7 +355,7 @@ table {
 }
 
 h1 {
-    font-family: NeoRetro;
+    font-family: Segoe Print;
     font-size: x-large;
     color: brown;
 }
@@ -364,7 +365,7 @@ h1 {
 }
 
 h2 {
-    font-family: NeoRetro;
+    font-family: Segoe Print;
     font-size: 16;
     color: firebrick;
 }
@@ -389,7 +390,7 @@ section p {
 }
 
 #content a {
-    color: blue;
+    color: rgb(239, 110, 3);
 }
 
 #content table {
